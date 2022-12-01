@@ -52,14 +52,20 @@ jobs:
       - name: Build forc and forc-fmt
         uses: actions-rs/cargo@v1
         with:
-          command: install 
+          command: install
           args: --path sway/forc
+
+      - name: Build forc and forc-fmt
+        uses: actions-rs/cargo@v1
+        with:
+          command: install
+          args: --path sway/forc-plugins/forc-fmt
 
       - name: Build Sway test projects
         uses: actions-rs/cargo@v1
         with:
           command: run
-          args: --bin test-projects -- -n 4 build
+          args: --bin test-projects -- -n 8 build
 
       - name: Check format of Sway test projects
         uses: actions-rs/cargo@v1
