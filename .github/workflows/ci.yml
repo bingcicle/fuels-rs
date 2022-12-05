@@ -53,13 +53,13 @@ jobs:
         uses: actions-rs/cargo@v1
         with:
           command: install
-          args: --path sway/forc
+          args: --debug --path sway/forc
 
       - name: Build forc and forc-fmt
         uses: actions-rs/cargo@v1
         with:
           command: install
-          args: --path sway/forc-plugins/forc-fmt
+          args: --debug --path sway/forc-plugins/forc-fmt
 
       - name: Build Sway test projects
         uses: actions-rs/cargo@v1
