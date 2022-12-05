@@ -49,17 +49,11 @@ jobs:
           path: sway
           fetch-depth: 0
 
-      - name: Build forc and forc-fmt
+      - name: Build forc
         uses: actions-rs/cargo@v1
         with:
           command: install
           args: --debug --path sway/forc
-
-      - name: Build forc and forc-fmt
-        uses: actions-rs/cargo@v1
-        with:
-          command: install
-          args: --debug --path sway/forc-plugins/forc-fmt
 
       - name: Build Sway test projects
         uses: actions-rs/cargo@v1
