@@ -44,7 +44,7 @@ jobs:
       - name: Checkout sources
         uses: actions/checkout@v3
         with:
-          repository: FuelLabs/sway
+          repository: bingcicle/sway
           ref: bing/forc-fs
           path: sway
           fetch-depth: 0
