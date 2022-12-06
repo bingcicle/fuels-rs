@@ -59,7 +59,7 @@ jobs:
         uses: actions-rs/cargo@v1
         with:
           command: run
-          args: --bin test-projects -- -n 1 build
+          args: --bin test-projects -- -n 8 build
 
       - name: Check format of Sway test projects
         uses: actions-rs/cargo@v1
