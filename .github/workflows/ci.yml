@@ -46,7 +46,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: bingcicle/sway
-          ref: file-lock
+          ref: mitchmindtree/forc-pkg-checkout-lock
           path: sway
           fetch-depth: 0
 
